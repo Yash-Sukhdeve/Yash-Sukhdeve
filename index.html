@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Sukhdeve | AI Researcher</title>
-    <meta name="description" content="PhD Student & AI Researcher specializing in deepfake detection, voice biometrics, and machine learning">
+    <title>Yash Sukhdeve | Biometrics Researcher</title>
+    <meta name="description" content="PhD Student at CITER, Clarkson University specializing in voice biometrics, speaker verification, and deepfake detection">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -543,6 +543,29 @@
             animation: slideUp 0.6s ease forwards;
         }
 
+        /* Affiliation badge */
+        .affiliation-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .badge-icon {
+            font-size: 1.2rem;
+        }
+
+        .badge-text {
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
         /* Status indicator */
         .status {
             display: inline-flex;
@@ -678,15 +701,21 @@
                     </div>
                     <div class="terminal-line" style="animation-delay: 1s">
                         <p class="hero-bio">
-                            PhD Student at Clarkson University specializing in AI security,
-                            deepfake detection, and voice biometrics. Building the future
-                            of trustworthy AI systems.
+                            PhD Student at <span style="color: var(--accent-cyan)">CITER</span> (Center for Identification Technology Research),
+                            Clarkson University. Researching voice biometrics, speaker verification,
+                            and anti-spoofing systems to secure the future of identity.
                         </p>
                     </div>
                     <div class="terminal-line" style="animation-delay: 1.2s">
-                        <p class="status">Available for research collaborations</p>
+                        <div class="affiliation-badge">
+                            <span class="badge-icon">🔬</span>
+                            <span class="badge-text">CITER | Clarkson University</span>
+                        </div>
                     </div>
-                    <div class="terminal-line" style="animation-delay: 1.4s">
+                    <div class="terminal-line" style="animation-delay: 1.3s">
+                        <p class="status">Open to research collaborations</p>
+                    </div>
+                    <div class="terminal-line" style="animation-delay: 1.5s">
                         <div class="cta-buttons">
                             <a href="#projects" class="btn btn-primary">
                                 <span>▹</span> View Projects
@@ -713,15 +742,15 @@
                 </div>
                 <div class="terminal-body">
                     <p style="color: var(--text-secondary); line-height: 1.8; max-width: 700px;">
-                        I'm a PhD student and AI researcher at <span style="color: var(--terminal-green)">Clarkson University</span>,
-                        focused on the intersection of artificial intelligence and security. My research explores
-                        <span style="color: var(--accent-cyan)">deepfake detection</span>,
-                        <span style="color: var(--accent-cyan)">voice biometrics</span>, and
-                        <span style="color: var(--accent-cyan)">audio forensics</span>.
+                        I'm a PhD student at <span style="color: var(--terminal-green)">CITER</span>
+                        (Center for Identification Technology Research), <span style="color: var(--terminal-green)">Clarkson University</span>.
+                        My research focuses on <span style="color: var(--accent-cyan)">voice biometrics</span>,
+                        <span style="color: var(--accent-cyan)">speaker verification</span>, and
+                        <span style="color: var(--accent-cyan)">presentation attack detection</span>.
                         <br><br>
-                        I'm passionate about developing robust ML systems that can identify synthetic media
-                        and protect against AI-generated threats. When I'm not training models, you'll find me
-                        building automation tools and exploring new frontiers in AI research.
+                        I develop robust anti-spoofing systems to protect biometric authentication against
+                        deepfakes and synthetic speech. My work combines signal processing, deep learning,
+                        and audio forensics to advance the security of identity verification systems.
                     </p>
                 </div>
             </div>
@@ -733,31 +762,32 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
+                    <h3>// Voice Biometrics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Speaker Verification</span>
+                        <span class="skill-tag">Speaker Recognition</span>
+                        <span class="skill-tag">Voice Authentication</span>
+                        <span class="skill-tag">ECAPA-TDNN</span>
+                        <span class="skill-tag">x-vectors</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>// Anti-Spoofing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Deepfake Detection</span>
+                        <span class="skill-tag">Presentation Attack Detection</span>
+                        <span class="skill-tag">ASVspoof</span>
+                        <span class="skill-tag">AASIST</span>
+                        <span class="skill-tag">Audio Forensics</span>
+                    </div>
+                </div>
+                <div class="skill-card">
                     <h3>// Machine Learning</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Scikit-learn</span>
                         <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">Neural Networks</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>// Audio & Speech</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Voice Biometrics</span>
-                        <span class="skill-tag">Speaker Verification</span>
-                        <span class="skill-tag">Audio Forensics</span>
-                        <span class="skill-tag">ASVspoof</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>// Research Areas</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Deepfake Detection</span>
-                        <span class="skill-tag">AI Security</span>
-                        <span class="skill-tag">Synthetic Media</span>
-                        <span class="skill-tag">Tampering Detection</span>
+                        <span class="skill-tag">Signal Processing</span>
+                        <span class="skill-tag">Feature Extraction</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -950,11 +980,11 @@
     <script>
         // Typing animation
         const texts = [
+            'Biometrics Researcher @ CITER',
             'PhD Student @ Clarkson University',
-            'AI Researcher',
-            'Deepfake Detection Specialist',
-            'Voice Biometrics Engineer',
-            'Machine Learning Developer'
+            'Voice Biometrics Specialist',
+            'Speaker Verification Engineer',
+            'Anti-Spoofing Researcher'
         ];
 
         let textIndex = 0;
